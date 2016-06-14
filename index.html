@@ -859,7 +859,6 @@
                         
                     var element = document.createElement( 'div' );
 					element.className = 'contact-element';
-                    element.Id = 'contact-element';
                     element.style.backgroundColor = 'rgba(0,15,127,' + 0.9 + ')';
                         
                       addElement();
@@ -1063,6 +1062,9 @@
                 
                 
                 var elementsAll = document.getElementsByClassName('element');
+                var elementContact = document.getElementsByClassName('contact-element');
+                var elementAbout = document.getElementsByClassName('about-element');
+                var elementService = document.getElementsByClassName('service-element');
                 
                 function changeColor(coll, color){
 
@@ -1092,6 +1094,9 @@
                                        
                     document.body.style.backgroundColor = 'rgba(0,0,0,1)';
                     changeColor(elementsAll, 'rgba(25,15,125,0.8)');
+                    changeColor(elementContact, 'rgba(25,15,125,0.8)');
+                    changeColor(elementAbout, 'rgba(25,15,125,0.8)');
+                    changeColor(elementService, 'rgba(25,15,125,0.8)');
                 
 				}, false );
                 
@@ -1099,6 +1104,9 @@
 				button.addEventListener( 'click', function ( event ) {
                                        
                     changeColor(elementsAll, 'rgba('+ (Math.floor(Math.random() * (254)) + 1) + ',' + (Math.floor(Math.random() * (254)) + 1) + ',' + (Math.floor(Math.random() * (254)) + 1) + ',' + 0.8 +')');
+                    changeColor(elementContact, 'rgba('+ (Math.floor(Math.random() * (254)) + 1) + ',' + (Math.floor(Math.random() * (254)) + 1) + ',' + (Math.floor(Math.random() * (254)) + 1) + ',' + 0.8 +')');
+                    changeColor(elementAbout, 'rgba('+ (Math.floor(Math.random() * (254)) + 1) + ',' + (Math.floor(Math.random() * (254)) + 1) + ',' + (Math.floor(Math.random() * (254)) + 1) + ',' + 0.8 +')');
+                    changeColor(elementService, 'rgba('+ (Math.floor(Math.random() * (254)) + 1) + ',' + (Math.floor(Math.random() * (254)) + 1) + ',' + (Math.floor(Math.random() * (254)) + 1) + ',' + 0.8 +')');
                     
 				}, false );
               
@@ -1106,6 +1114,9 @@
 				button.addEventListener( 'click', function ( event ) {
                                        
                    changeColors(elementsAll);
+                    changeColor(elementContact, 'rgba('+ (Math.floor(Math.random() * (254)) + 1) + ',' + (Math.floor(Math.random() * (254)) + 1) + ',' + (Math.floor(Math.random() * (254)) + 1) + ',' + 0.8 +')');
+                    changeColor(elementAbout, 'rgba('+ (Math.floor(Math.random() * (254)) + 1) + ',' + (Math.floor(Math.random() * (254)) + 1) + ',' + (Math.floor(Math.random() * (254)) + 1) + ',' + 0.8 +')');
+                    changeColor(elementService, 'rgba('+ (Math.floor(Math.random() * (254)) + 1) + ',' + (Math.floor(Math.random() * (254)) + 1) + ',' + (Math.floor(Math.random() * (254)) + 1) + ',' + 0.8 +')');
                     
 				}, false );
                 
