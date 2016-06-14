@@ -954,7 +954,7 @@
 				}
 
 				// grid
-
+              
 				for ( var i = 0; i < objects.length; i ++ ) {
 
 					var object = new THREE.Object3D();
@@ -962,6 +962,12 @@
 					object.position.x = ( ( i % 5 ) * 400 ) - 800;
 					object.position.y = ( - ( Math.floor( i / 5 ) % 5 ) * 400 ) + 800;
 					object.position.z = ( Math.floor( i / 25 ) ) * 1000 - 1900;
+                    
+                    vector.x = object.position.x*2;
+					vector.y = object.position.y*4;
+					vector.z = object.position.z*3;
+
+					object.lookAt( vector );
 
 					targets.grid.push( object );
 
